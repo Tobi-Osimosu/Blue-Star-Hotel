@@ -1,0 +1,72 @@
+$primary-color-light: #333333;
+$primary-color-dark: #ffffff;
+
+$secondary-color-light: #ffffff;
+$secondary-color-dark: #ffffff;
+
+$tertiary-color-light: #005fff;
+$tertiary-color-dark: #005fff;
+
+$navbar-backgroundcolor-light: #ffffff;
+$navbar-backgroundcolor-dark: #2f3447;
+
+$navbar-active-link-light: #333333;
+$navbar-active-link-dark: #ffffff;
+
+$img-overlay-light: rgba(51, 51, 51, 0.6);
+$img-overlay-dark: rgba(0, 95, 255, 0.5);
+
+$landing-btn-color-light: #ffffff;
+$landing-btn-color-dark: #005fff;
+
+$landing-btn-bg-color-light: #005fff;
+$landing-btn-bg-color-dark: #ffffff;
+
+$dot-bg-color-light: rgba(255, 255, 255, 0.2);
+$dot-bg-color-dark: rgba(51, 51, 51, 0.5);
+
+$bg1-color-light: #ffffff;
+$bg1-color-dark: #2f3447;
+
+$colors: (
+  --primary-color: (
+    $primary-color-light,
+    $primary-color-dark,
+  ),
+  --secondary-color: (
+    $secondary-color-light,
+    $secondary-color-dark,
+  ),
+  --tertiary-color: (
+    $tertiary-color-light,
+    $tertiary-color-dark,
+  ),
+  --navbar-backgroundcolor: (
+    $navbar-backgroundcolor-light,
+    $navbar-backgroundcolor-dark,
+  ),
+  --navbar-active-link: (
+    $navbar-active-link-light,
+    $navbar-active-link-dark,
+  ),
+  --img-overlay: (
+    $img-overlay-light,
+    $img-overlay-dark,
+  ),
+  --landing-btn-color: (
+    $landing-btn-color-light,
+    $landing-btn-color-dark,
+  ),
+  --landing-btn-bg-color: (
+    $landing-btn-bg-color-light,
+    $landing-btn-bg-color-dark,
+  ),
+  --dot-bg-color: (
+    $dot-bg-color-light,
+    $dot-bg-color-dark,
+  ),
+  --bg1-color: (
+    $bg1-color-light,
+    $bg1-color-dark,
+  ),
+);
