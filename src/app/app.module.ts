@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { SwiperModule } from 'ngx-swiper-wrapper';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -40,11 +41,8 @@ import { OurFacilitiesLandingComponent } from './our-facilities/our-facilities-l
     ContactComponent,
     OurFacilitiesLandingComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, SwiperModule],
+  providers: [{ provide: 'windowObject', useValue: window }],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

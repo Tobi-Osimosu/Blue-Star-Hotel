@@ -28,6 +28,9 @@ $dot-bg-color-dark: rgba(51, 51, 51, 0.5);
 $bg1-color-light: #ffffff;
 $bg1-color-dark: #2f3447;
 
+$bg2-color-light: rgba(0, 95, 255, 0.05);
+$bg2-color-dark: #242635;
+
 $colors: (
   --primary-color: (
     $primary-color-light,
@@ -68,5 +71,9 @@ $colors: (
   --bg1-color: (
     $bg1-color-light,
     $bg1-color-dark,
+  ),
+  --bg2-color: (
+    $bg2-color-light,
+    $bg2-color-dark,
   ),
 );

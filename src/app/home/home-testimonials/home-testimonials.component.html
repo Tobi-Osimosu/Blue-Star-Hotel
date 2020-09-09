@@ -1,1 +1,60 @@
-<p>home-testimonials works!</p>
+<section id="testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <p class="testimonial-text text-center text-md-left">Testimonials</p>
+                <h2 class="testimonial-header">Our Awesome <span class="bold underline">Guests Review</span></h2>
+            </div>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper-container" [swiper]="config">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="box d-flex flex-column justify-content-between">
+                        <p class="testimonial">Blue Star has been like a home for myself and my family. Their services
+                            are so onpoint. I
+                            would gladly recommend Blue Star to anyone.</p>
+                        <div class="customer-container d-flex align-items-center">
+                            <img src="/assets/home/customer1.jpg" alt="" class="customer-img img-fluid">
+                            <p class="customer-name">Adesanoye Adenike</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box d-flex flex-column justify-content-between">
+                        <p class="testimonial">I want to say welldone to the management of Blue Star, your accomodations
+                            and love towards
+                            your members is amazing.</p>
+                        <div class="customer-container d-flex align-items-center">
+                            <img src="/assets/home/customer2.jpg" alt="" class="customer-img img-fluid">
+                            <p class="customer-name">Osimosu Oluwatobiloba James</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box d-flex flex-column justify-content-between">
+                        <p class="testimonial">What an amazing hotel. Dont relent guys, keep it up.</p>
+                        <div class="customer-container d-flex align-items-center">
+                            <img src="/assets/home/customer3.jpg" alt="" class="customer-img img-fluid">
+                            <p class="customer-name">Omidiora Folashade</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-slide box">Slide 4</div>
+                <div class="swiper-slide box">Slide 5</div>
+                <div class="swiper-slide box">Slide 6</div> -->
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </div>
+</section>
