@@ -6,7 +6,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
+  // background-attachment: fixed;
 
   .container {
     position: relative;
@@ -58,7 +58,7 @@
   .welcome-text {
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 32px;
     margin-bottom: 42px;
   }
@@ -70,7 +70,7 @@
     border-radius: 5px;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--landing-btn-color);
   }
 }

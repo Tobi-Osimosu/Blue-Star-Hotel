@@ -2,4 +2,53 @@
   background: var(--bg1-color);
   padding-top: 186px;
   padding-bottom: 66px;
+
+  .about-text1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--landing-btn-bg-color);
+  }
+
+  .about-heading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 60px;
+    color: var(--primary-color);
+  }
+
+  .about-text2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 42px;
+    color: var(--primary-color);
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+
+  .underline {
+    border-bottom: 8px solid #005fff;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #about {
+    .about-text1 {
+      font-size: 20px;
+    }
+
+    .about-heading {
+      font-size: 37px;
+      line-height: 60px;
+    }
+
+    .about-text2 {
+      font-size: 20px;
+      line-height: 42px;
+    }
+  }
 }
