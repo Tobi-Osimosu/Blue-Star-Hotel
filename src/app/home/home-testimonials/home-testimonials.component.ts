@@ -8,15 +8,6 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./home-testimonials.component.scss'],
 })
 export class HomeTestimonialsComponent implements OnInit {
-  // slides = [
-  //   'First slide',
-  //   'Second slide',
-  //   'Third slide',
-  //   'Fourth slide',
-  //   'Fifth slide',
-  //   'Sixth slide',
-  // ];
-
   config: SwiperConfigInterface = {
     direction: 'horizontal',
     loop: true,
@@ -37,17 +28,19 @@ export class HomeTestimonialsComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    window.addEventListener('resize', () => {
-      if (matchMedia('(max-width: 767.98px)').matches) {
-        this.config.slidesPerView = 1;
-        this.config.effect = 'slide';
-      } else if (matchMedia('(max-width: 991.98px)').matches) {
-        this.config.slidesPerView = 2;
-        this.config.effect = 'slide';
-      } else {
-        this.config.slidesPerView = 3;
-        this.config.effect = 'coverflow';
-      }
-    });
+    this.manageSlide();
+  }
+
+  manageSlide() {
+    if (matchMedia('(max-width: 767.98px)').matches) {
+      this.config.slidesPerView = 1;
+      this.config.effect = 'slide';
+    } else if (matchMedia('(max-width: 991.98px)').matches) {
+      this.config.slidesPerView = 2;
+      this.config.effect = 'slide';
+    } else if (matchMedia('(min-width: 992px)').matches) {
+      this.config.slidesPerView = 3;
+      this.config.effect = 'coverflow';
+    }
   }
 }
