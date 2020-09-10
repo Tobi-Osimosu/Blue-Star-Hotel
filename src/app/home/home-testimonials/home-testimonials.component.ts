@@ -16,7 +16,7 @@ export class HomeTestimonialsComponent implements OnInit {
     keyboard: true,
     navigation: true,
     autoplay: {
-      delay: 3000,
+      delay: 5000,
     },
     followFinger: true,
     // effect: 'coverflow',

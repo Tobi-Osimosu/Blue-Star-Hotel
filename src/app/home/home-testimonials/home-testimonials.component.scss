@@ -64,6 +64,11 @@
     font-size: 18px;
     color: var(--landing-btn-bg-color);
   }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: var(--primary-color);
+  }
 }
 
 @media screen and (min-width: 992px) {
