@@ -1,7 +1,7 @@
 #subscribe {
   background: var(--bg1-color);
   padding-top: 93px;
-  padding-bottom: 351px;
+  padding-bottom: 200px;
 
   .subscribe-text {
     font-style: normal;
@@ -51,6 +51,8 @@
 
 @media screen and (min-width: 992px) {
   #subscribe {
+    padding-bottom: 351px;
+    
     .subscribe-text {
       font-size: 20px !important;
     }

@@ -1,30 +1,30 @@
 <footer>
     <div class="container-fluid padding-reset">
         <div class="row margin-reset">
-            <div class="bg-img col-12 col-md-11 padding-reset">
+            <div class="bg-img col-12 col-lg-11 padding-reset">
                 <div class="overlay">
                     <div class="container">
                         <div class="row">
-                            <p class="footer-text1 col-md-6">
+                            <p class="footer-text1 col-lg-6">
                                 Do you have anything to tell us about our staff, management, services or
                                 anything you want us to know?
                             </p>
-                            <div class="col-md-6 d-flex justify-content-center">
+                            <div class="col-lg-6 d-flex justify-content-center mt-4 mt-lg-0">
                                 <form>
                                     <div class="form-group">
                                         <label for="name">Name</label>
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="email">Email</label>
-                                        <input type="email" class="form-control">
+                                        <input type="email" class="form-control" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="message">Message</label>
-                                        <textarea rows="5" class="form-control"></textarea>
+                                        <textarea rows="5" class="form-control" required></textarea>
                                     </div>
                                     <div class="d-flex justify-content-end">
-                                        <button type="submit" class="btn btn-primary">Send</button>
+                                        <button type="submit" class="btn footer-btn">Send</button>
                                     </div>
                                 </form>
                             </div>
@@ -34,7 +34,7 @@
                             <div class="col-md-5">
                                 <h2 class="footer-logo">BLUE STAR</h2>
                             </div>
-                            <div class="col-md-7 d-flex justify-content-between">
+                            <div class="col-md-7 d-flex justify-content-between flex-wrap">
                                 <div class="">
                                     <a [routerLink]="['/home']" class="nav-item nav-link">Home</a>
                                 </div>
@@ -56,7 +56,7 @@
     </div>
     <div class="container">
         <div class="follow-us d-flex justify-content-end align-items-center">
-            <p class="follow-us-text">Follow Us</p>
+            <p class="follow-us-text">Follow Us: </p>
         </div>
     </div>
 </footer>

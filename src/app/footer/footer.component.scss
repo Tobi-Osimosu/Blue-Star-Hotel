@@ -7,7 +7,7 @@ footer {
     background-size: cover;
     position: relative;
     margin-bottom: 36px;
-    height: 60vh;
+    height: 900px;
     border-radius: 0px 100px 0px 0px;
   }
 
@@ -40,23 +40,26 @@ footer {
   }
 
   form {
-    position: absolute;
-    top: -54%;
-    padding: 25px 35px;
     background: var(--form-bg-color);
     border-radius: 5px;
-    width: 70%;
+    padding: 25px 35px;
+    width: 95%;
   }
 
   .footer-text1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
     margin-top: 109px;
-    margin-bottom: 109px;
     border-left: 18px solid var(--landing-btn-bg-color);
     border-radius: 18px;
+    color: #ffffff;
   }
 
   .divider {
     border: 1px solid #ffffff;
+    margin-top: 60px;
   }
 
   .footer-nav {
@@ -68,16 +71,33 @@ footer {
   label {
     color: #ffffff;
   }
+
+  .footer-btn {
+    padding: 6px 27px !important;
+    background: #ffffff !important;
+    color: var(--bg3-color) !important;
+  }
 }
 
 @media screen and (min-width: 992px) {
   footer {
+    .bg-img {
+      height: 430px;
+    }
+
     .footer-text1 {
-      color: #ffffff;
-      font-style: normal;
-      font-weight: bold;
       font-size: 24px;
       line-height: 40px;
+    }
+
+    form {
+      position: absolute;
+      top: -54%;
+      width: 70%;
+    }
+
+    .divider {
+      margin-top: 109px;
     }
   }
 }

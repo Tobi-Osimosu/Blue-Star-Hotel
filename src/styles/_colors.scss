@@ -14,7 +14,8 @@ $navbar-active-link-light: #333333;
 $navbar-active-link-dark: #ffffff;
 
 $img-overlay-light: rgba(51, 51, 51, 0.6);
-$img-overlay-dark: rgba(0, 95, 255, 0.38);
+$img-overlay-dark: rgba(51, 51, 51, 0.6);
+// $img-overlay-dark: rgba(0, 95, 255, 0.38);
 
 $landing-btn-color-light: #ffffff;
 $landing-btn-color-dark: #005fff;
@@ -30,6 +31,9 @@ $bg1-color-dark: #2f3447;
 
 $bg2-color-light: rgba(0, 95, 255, 0.05);
 $bg2-color-dark: #242635;
+
+$bg3-color-light: #005fff;
+$bg3-color-dark: #242635;
 
 $colors: (
   --primary-color: (
@@ -79,5 +83,9 @@ $colors: (
   --form-bg-color: (
     $landing-btn-bg-color-light,
     $bg2-color-dark,
+  ),
+  --bg3-color: (
+    $bg3-color-light,
+    $bg3-color-dark,
   ),
 );
