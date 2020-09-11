@@ -2,11 +2,11 @@
   position: relative;
   height: 100vh;
   background: url(/assets/home/landing.jpg);
-  background-color: #333333;
+  // background-color: #333333;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  // background-attachment: fixed;
+  background-attachment: fixed;
 
   .container {
     position: relative;
@@ -76,24 +76,26 @@
 }
 
 @media screen and (min-width: 992px) {
-  .welcome {
-    width: 78% !important;
-  }
+  #home {
+    .welcome {
+      width: 78% !important;
+    }
 
-  .welcome-heading {
-    font-size: 66px !important;
-  }
+    .welcome-heading {
+      font-size: 66px !important;
+    }
 
-  .welcome-text {
-    font-size: 30px !important;
-    line-height: 42px !important;
-  }
+    .welcome-text {
+      font-size: 30px !important;
+      line-height: 42px !important;
+    }
 
-  .landing-btn {
-    font-size: 24px !important;
-  }
+    .landing-btn {
+      font-size: 24px !important;
+    }
 
-  .dots-container {
-    top: -150px !important;
+    .dots-container {
+      top: -150px !important;
+    }
   }
 }

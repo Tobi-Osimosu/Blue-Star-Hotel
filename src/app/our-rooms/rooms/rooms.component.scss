@@ -1,0 +1,95 @@
+#junior-room {
+  padding-top: 141px;
+  padding-bottom: 141px;
+  background: linear-gradient(
+    180deg,
+    var(--bg2-color) 50%,
+    var(--bg1-color) 50%
+  );
+}
+
+#luxury-room {
+  background: var(--bg1-color);
+}
+
+.room-text1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  color: var(--primary-color);
+  margin-bottom: 24px;
+}
+
+.room-text2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  color: var(--landing-btn-bg-color);
+  margin-bottom: 6px;
+}
+
+.room-text3 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.room-text4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.room-btn1,
+.room-btn2 {
+  padding: 10px 20px !important;
+}
+
+.room-btn1 {
+  background: #005fff;
+  color: #ffffff;
+}
+
+.room-btn2 {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.junior-room-img {
+  background: url(/assets/our-rooms/junior-room.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media screen and (min-width: 992px) {
+  #junior-room {
+    background: linear-gradient(
+      90deg,
+      var(--bg2-color) 50%,
+      var(--bg1-color) 50%
+    );
+  }
+  .room-text1 {
+    font-size: 37px !important;
+  }
+
+  .room-text2 {
+    font-size: 30px !important;
+  }
+
+  .room-text3 {
+    font-size: 20px !important;
+  }
+
+  .room-text4 {
+    font-size: 20px !important;
+  }
+}

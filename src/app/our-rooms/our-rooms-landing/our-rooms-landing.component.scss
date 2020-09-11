@@ -1,0 +1,98 @@
+#our-rooms {
+  position: relative;
+  height: 100vh;
+  background: url(/assets/our-rooms/our-rooms.jpg);
+  //   background-color: #333333;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  .container {
+    position: relative;
+  }
+
+  .dots-container,
+  .dots-container2 {
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(12, 10px);
+    grid-template-columns: repeat(12, 10px);
+    gap: 5px;
+  }
+
+  .dots-container {
+    top: -200px;
+    right: 0;
+  }
+
+  .dots-container2 {
+    bottom: -200px;
+    left: 0;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--dot-bg-color);
+  }
+
+  .overlay {
+    background: var(--img-overlay);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  //   .our-rooms {
+  // margin-left: auto;
+  // margin-right: auto;
+  //   }
+
+  .our-rooms-heading,
+  .our-rooms-text {
+    color: #ffffff;
+  }
+
+  .our-rooms-heading {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    margin-bottom: 42px;
+  }
+
+  .our-rooms-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 22px;
+  }
+
+  .underline {
+    display: inline-block;
+    border-bottom: 8px solid #005fff;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #our-rooms {
+    .our-rooms {
+      width: 78% !important;
+    }
+
+    .our-rooms-heading {
+      font-size: 66px !important;
+    }
+
+    .our-rooms-text {
+      font-size: 30px !important;
+    }
+
+    .dots-container {
+      top: -150px !important;
+    }
+  }
+}
