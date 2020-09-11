@@ -2,11 +2,9 @@
   position: relative;
   height: 100vh;
   background: url(/assets/our-rooms/our-rooms.jpg);
-  //   background-color: #333333;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
 
   .container {
     position: relative;
@@ -79,6 +77,8 @@
 
 @media screen and (min-width: 992px) {
   #our-rooms {
+    background-attachment: fixed;
+
     .our-rooms {
       width: 78% !important;
     }

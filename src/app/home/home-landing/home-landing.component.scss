@@ -2,11 +2,9 @@
   position: relative;
   height: 100vh;
   background: url(/assets/home/landing.jpg);
-  // background-color: #333333;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
 
   .container {
     position: relative;
@@ -77,6 +75,8 @@
 
 @media screen and (min-width: 992px) {
   #home {
+    background-attachment: fixed;
+
     .welcome {
       width: 78% !important;
     }
