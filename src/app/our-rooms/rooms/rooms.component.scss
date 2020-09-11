@@ -1,6 +1,8 @@
-#junior-room {
-  padding-top: 141px;
-  padding-bottom: 141px;
+#junior-room,
+#luxury-room,
+#executive-room,
+#superior-room,
+#standard-room {
   background: linear-gradient(
     180deg,
     var(--bg2-color) 50%,
@@ -8,8 +10,11 @@
   );
 }
 
-#luxury-room {
-  background: var(--bg1-color);
+#junior-room,
+#executive-room,
+#standard-room {
+  padding-top: 141px;
+  padding-bottom: 141px;
 }
 
 .room-text1 {
@@ -70,13 +75,21 @@
 }
 
 @media screen and (min-width: 992px) {
-  #junior-room {
+  #junior-room,
+  #executive-room,
+  #standard-room {
     background: linear-gradient(
       90deg,
       var(--bg2-color) 50%,
       var(--bg1-color) 50%
     );
   }
+
+  #luxury-room,
+  #superior-room {
+    background: var(--bg1-color);
+  }
+
   .room-text1 {
     font-size: 37px !important;
   }
