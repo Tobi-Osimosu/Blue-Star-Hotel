@@ -38,11 +38,13 @@
         </div>
 
         <div class="navLinks">
-            <a [routerLink]="['/home']" [routerLinkActive]="['activeLink']">Home</a>
-            <a [routerLink]="['/our-rooms']" [routerLinkActive]="['activeLink']">Our Rooms</a>
-            <a [routerLink]="['/our-facilities']" [routerLinkActive]="['activeLink']">Our Facilities</a>
-            <a [routerLink]="['/contact-us']" [routerLinkActive]="['activeLink']">Contact Us</a>
-            <div class="animation start-home"></div>
+            <div class="links">
+                <a [routerLink]="['/home']" [routerLinkActive]="['activeLink']">Home</a>
+                <a [routerLink]="['/our-rooms']" [routerLinkActive]="['activeLink']">Our Rooms</a>
+                <a [routerLink]="['/our-facilities']" [routerLinkActive]="['activeLink']">Our Facilities</a>
+                <a [routerLink]="['/contact-us']" [routerLinkActive]="['activeLink']">Contact Us</a>
+                <div class="animation start-home"></div>
+            </div>
         </div>
     </nav>
 </header>
