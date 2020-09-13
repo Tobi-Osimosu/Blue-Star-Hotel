@@ -1,4 +1,4 @@
-<header id="header">
+<!-- <header id="header">
     <nav class="navbar navbar-expand-lg navbar-color">
         <div class="container">
             <a class="navbar-brand" [routerLink]="['/home']">BLUE <span class="star">STAR</span></a>
@@ -23,6 +23,26 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </nav>
+</header> -->
+
+<header (window:click)="closeMenu()">
+    <nav class="container">
+        <div class="navBrand">
+            <a [routerLink]="['/home']">BLUE <span class="star">STAR</span></a>
+        </div>
+
+        <div class="menu-wrapper btn d-lg-none" (click)="openMenu($event)">
+            <div class="menu"></div>
+        </div>
+
+        <div class="navLinks">
+            <a [routerLink]="['/home']" [routerLinkActive]="['activeLink']">Home</a>
+            <a [routerLink]="['/our-rooms']" [routerLinkActive]="['activeLink']">Our Rooms</a>
+            <a [routerLink]="['/our-facilities']" [routerLinkActive]="['activeLink']">Our Facilities</a>
+            <a [routerLink]="['/contact-us']" [routerLinkActive]="['activeLink']">Contact Us</a>
+            <div class="animation start-home"></div>
         </div>
     </nav>
 </header>
