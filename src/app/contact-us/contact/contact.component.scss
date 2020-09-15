@@ -1,0 +1,20 @@
+#contact {
+  padding-top: 100px;
+  padding-bottom: 150px;
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #contact {
+    padding-bottom: 250px;
+
+    .contact-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
