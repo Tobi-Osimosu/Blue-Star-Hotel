@@ -26,7 +26,6 @@ export class HeaderComponent implements OnInit {
 
     navButton.classList.toggle('active');
     navMenu.classList.toggle('active');
-    console.log('yeah');
 
     event.preventDefault();
     event.stopImmediatePropagation();
@@ -40,6 +39,5 @@ export class HeaderComponent implements OnInit {
       navButton.classList.remove('active');
       navMenu.classList.remove('active');
     }
-    console.log('yyysudb');
   }
 }

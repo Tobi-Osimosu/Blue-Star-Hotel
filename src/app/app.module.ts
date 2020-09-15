@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 
@@ -41,7 +42,12 @@ import { OurFacilitiesLandingComponent } from './our-facilities/our-facilities-l
     ContactComponent,
     OurFacilitiesLandingComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, SwiperModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    SwiperModule,
+  ],
   providers: [{ provide: 'windowObject', useValue: window }],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,108 @@
+#facilities {
+  padding-top: 100px;
+  padding-bottom: 200px;
+
+  .facilities-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    color: #ffffff;
+  }
+
+  .health-care {
+    background: url(/assets/our-facilities/health-care.jpg);
+  }
+  .laundry {
+    background: url(/assets/our-facilities/laundry.jpg);
+  }
+  .internet {
+    background: url(/assets/our-facilities/internet.jpg);
+  }
+  .spa {
+    background: url(/assets/our-facilities/spa.jpg);
+  }
+  .restaurant {
+    background: url(/assets/our-facilities/restaurant.jpg);
+  }
+  .swimming-pool {
+    background: url(/assets/our-facilities/swimming-pool.jpg);
+  }
+
+  .health-care,
+  .laundry,
+  .internet,
+  .spa,
+  .restaurant,
+  .swimming-pool {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .box {
+    height: 449px;
+  }
+
+  .box-header,
+  .box-text {
+    text-align: center;
+    font-style: normal;
+  }
+
+  .box-header {
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .box-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .overlay {
+    background: var(--img-overlay);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+  }
+
+  .line1,
+  .line2 {
+    position: absolute;
+    height: 1px;
+    background: #ffffff;
+    width: 40%;
+  }
+
+  .line1 {
+    top: 125px;
+  }
+
+  .line2 {
+    bottom: 125px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #facilities {
+    padding-top: 186px;
+    padding-bottom: 278px;
+
+    .facilities-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .overlay {
+      padding: 0 82px;
+    }
+  }
+}
