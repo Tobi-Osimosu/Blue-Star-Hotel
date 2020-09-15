@@ -7,11 +7,16 @@
     grid-template-columns: 1fr;
     gap: 50px;
   }
+
+  .contact-header,
+  .contact-text {
+    color: var(--primary-color);
+  }
 }
 
 @media screen and (min-width: 992px) {
   #contact {
-    padding-bottom: 250px;
+    padding-bottom: 200px;
 
     .contact-grid {
       grid-template-columns: 1fr 1fr;
