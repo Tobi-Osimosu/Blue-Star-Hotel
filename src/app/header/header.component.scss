@@ -26,6 +26,17 @@ header {
     z-index: 5;
   }
 
+  .theme-icon {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .rotate-theme-icon {
+    transform: rotate(180deg);
+  }
+
   .menu-wrapper {
     display: flex;
     align-items: center;

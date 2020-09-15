@@ -1,12 +1,12 @@
 @import "colors";
 
-.theme-light {
+.light-mode {
   @each $name, $color in $colors {
     #{$name}: nth($color, 1);
   }
 }
 
-.theme-dark {
+.dark-mode {
   @each $name, $color in $colors {
     #{$name}: nth($color, 2);
   }

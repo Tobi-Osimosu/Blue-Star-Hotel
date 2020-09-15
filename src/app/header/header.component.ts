@@ -1,3 +1,4 @@
+import { ThemeService } from './../theme.service';
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
 
@@ -9,7 +10,8 @@ import { Component, Inject, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   constructor(
     @Inject(DOCUMENT) private document: Document,
-    @Inject('windowObject') private window: Window
+    @Inject('windowObject') private window: Window,
+    private themeService: ThemeService
   ) {}
 
   ngOnInit() {
@@ -39,5 +41,10 @@ export class HeaderComponent implements OnInit {
       navButton.classList.remove('active');
       navMenu.classList.remove('active');
     }
+  }
+
+  toggleTheme() {
+    this.themeService.setTheme();
+    this.themeService.rotateThemeIcon();
   }
 }

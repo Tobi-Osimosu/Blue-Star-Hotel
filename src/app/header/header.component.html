@@ -33,6 +33,10 @@
             <a [routerLink]="['/home']">BLUE <span class="star">STAR</span></a>
         </div>
 
+        <div class="theme-icon d-flex align-items-center" (click)="toggleTheme()">
+            <img src="/assets/theme-icon.svg" alt="Theme Icon">
+        </div>
+
         <div class="menu-wrapper btn d-lg-none" (click)="openMenu($event)">
             <div class="menu"></div>
         </div>

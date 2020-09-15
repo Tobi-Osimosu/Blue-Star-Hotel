@@ -1,3 +1,4 @@
+import { ThemeService } from './theme.service';
 import { routeAnimations } from './animations/routeAnimations.animation';
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
@@ -10,10 +11,18 @@ import * as AOS from 'aos';
   animations: [routeAnimations],
 })
 export class AppComponent implements OnInit {
-  title = 'Blue-Star-Hotel';
+  theme: string;
+
+  constructor(private themeService: ThemeService) {}
 
   ngOnInit() {
     AOS.init();
+
+    this.themeService.initTheme();
+
+    this.themeService.theme.subscribe((response) => {
+      this.theme = response;
+    });
   }
 
   prepareRoute(outlet: RouterOutlet) {

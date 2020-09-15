@@ -15,8 +15,14 @@ html {
 }
 
 body {
+  transition: all 5s ease-in-out;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--navbar-backgroundcolor);
 }
+
+.animate-colors-transition * {
+  transition: color 0.4s, background 0.4s ease-in-out;
+}
+
