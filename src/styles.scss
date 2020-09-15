@@ -16,13 +16,16 @@ html {
 
 body {
   transition: all 5s ease-in-out;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--navbar-backgroundcolor);
+  background: var(--navbar-backgroundcolor) !important;
 }
 
 .animate-colors-transition * {
-  transition: color 0.4s, background 0.4s ease-in-out;
+  transition: color 0.4s, background-color 0.4s ease-in-out;
 }
 
+.rotate-theme-icon  .theme-icon {
+  transform: rotateX(180deg);
+}

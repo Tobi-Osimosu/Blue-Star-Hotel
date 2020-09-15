@@ -33,16 +33,12 @@ header {
     transition: transform 0.4s ease-in-out;
   }
 
-  .rotate-theme-icon {
-    transform: rotate(180deg);
-  }
-
   .menu-wrapper {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     position: relative;
-    margin-left: auto;
+    // margin-left: auto;
     z-index: 4;
   }
 
@@ -176,8 +172,8 @@ header {
       height: 100% !important;
       width: auto !important;
       transform: skewX(0deg) translate(0, 0);
-      transform-origin: top right;
-      transition: all 0.6s ease-in-out;
+      transform-origin: top;
+      // transition: all 0.5s ease-in-out;
       z-index: 0 !important;
     }
 

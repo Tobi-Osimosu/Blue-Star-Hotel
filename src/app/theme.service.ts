@@ -21,9 +21,13 @@ export class ThemeService {
     } else {
       this.theme.next(this.storedTheme);
     }
-    
+  }
+
+  initThemeIconRotation() {
     if (this.storedTheme === 'dark-mode') {
       this.rotateThemeIcon();
+    } else {
+      null;
     }
   }
 
@@ -42,8 +46,6 @@ export class ThemeService {
   }
 
   rotateThemeIcon() {
-    this.document
-      .querySelector('.theme-icon')
-      .classList.toggle('rotate-theme-icon');
+    this.document.body.classList.toggle('rotate-theme-icon');
   }
 }

@@ -16,9 +16,10 @@ export class AppComponent implements OnInit {
   constructor(private themeService: ThemeService) {}
 
   ngOnInit() {
-    AOS.init();
+    // AOS.init();
 
     this.themeService.initTheme();
+    this.themeService.initThemeIconRotation();
 
     this.themeService.theme.subscribe((response) => {
       this.theme = response;

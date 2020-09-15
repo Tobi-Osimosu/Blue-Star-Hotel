@@ -19,7 +19,7 @@
   }
 
   .dots-container {
-    top: 0px;
+    top: -110px;
     right: 0;
   }
 
@@ -78,6 +78,10 @@
 
     .contact-us-text {
       font-size: 30px !important;
+    }
+
+    .dots-container {
+      top: 0px;
     }
   }
 }
