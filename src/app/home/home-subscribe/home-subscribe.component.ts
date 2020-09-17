@@ -23,7 +23,8 @@ export class HomeSubscribeComponent implements OnInit, AfterViewInit {
     let tl = gsap.timeline({
       defaults: {duration: 1},
       scrollTrigger: {
-        trigger: this.subscribe.nativeElement
+        trigger: this.subscribe.nativeElement,
+        start: "top center"
       }
     });
 
