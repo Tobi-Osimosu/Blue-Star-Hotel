@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     // AOS.init();
 
+
     this.themeService.initTheme();
     this.themeService.initThemeIconRotation();
 

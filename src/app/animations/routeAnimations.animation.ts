@@ -8,9 +8,9 @@ import {
 } from '@angular/animations';
 
 export const routeAnimations = trigger('routeAnimations', [
-  transition('* <=> *', [
+  transition('* => *', [
     query(
-      ':enter, :leave',
+      ':enter',
       [
         style({
           position: 'absolute',
@@ -29,7 +29,7 @@ export const routeAnimations = trigger('routeAnimations', [
         animate(
           '0.7s ease-in-out',
           style({
-            opacity: 1,
+            // opacity: 1,
             transform: 'translateY(0)',
           })
         ),
@@ -43,7 +43,7 @@ export const routeAnimations = trigger('routeAnimations', [
           '0s ease-in-out',
           style({
             opacity: 0,
-            transform: 'scale(0)',
+            transform: 'translateY(-100px)',
           })
         ),
       ],
