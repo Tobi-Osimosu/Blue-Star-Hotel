@@ -1,13 +1,22 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Inject,
+  AfterViewInit,
+  ElementRef,
+  ViewChild,
+} from '@angular/core';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import { DOCUMENT } from '@angular/common';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 @Component({
   selector: 'app-home-testimonials',
   templateUrl: './home-testimonials.component.html',
   styleUrls: ['./home-testimonials.component.scss'],
 })
-export class HomeTestimonialsComponent implements OnInit {
+export class HomeTestimonialsComponent implements OnInit, AfterViewInit {
   config: SwiperConfigInterface = {
     direction: 'horizontal',
     loop: true,
@@ -22,6 +31,11 @@ export class HomeTestimonialsComponent implements OnInit {
     // effect: 'coverflow',
   };
 
+  @ViewChild('testimonials', { static: false }) testimonials: ElementRef;
+  @ViewChild('text1', { static: false }) text1: ElementRef;
+  @ViewChild('text2', { static: false }) text2: ElementRef;
+  @ViewChild('swiper', { static: false }) swiper: ElementRef;
+
   constructor(
     @Inject(DOCUMENT) private document: Document,
     @Inject('windowObject') private window: Window
@@ -29,6 +43,21 @@ export class HomeTestimonialsComponent implements OnInit {
 
   ngOnInit() {
     this.manageSlide();
+  }
+
+  ngAfterViewInit() {
+    gsap.registerPlugin(ScrollTrigger);
+    let tl = gsap.timeline({
+      defaults: { duration: 1 },
+      scrollTrigger: {
+        trigger: this.testimonials.nativeElement,
+        start: 'center bottom',
+      },
+    });
+
+    tl.from(this.text1.nativeElement, { y: -50, opacity: 0 })
+      .from(this.text2.nativeElement, { y: -50, opacity: 0 }, '-=0.5')
+      .from(this.swiper.nativeElement, { opacity: 0, scale: 0 }, '-=0.65');
   }
 
   manageSlide() {

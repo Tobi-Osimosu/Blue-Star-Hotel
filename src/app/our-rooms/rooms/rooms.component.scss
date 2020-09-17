@@ -3,6 +3,7 @@
 #executive-room,
 #superior-room,
 #standard-room {
+  overflow-x: hidden;
   background: linear-gradient(
     180deg,
     var(--bg2-color) 50%,

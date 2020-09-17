@@ -1,14 +1,14 @@
 <!-- <section id="testimonials" (window:resize)="manageSlide()" data-aos="zoom-in-left" data-aos-offset="400"> -->
-<section id="testimonials" (window:resize)="manageSlide()">
+<section #testimonials id="testimonials" (window:resize)="manageSlide()">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-5">
-                <p class="testimonial-text text-center text-md-left">Testimonials</p>
-                <h2 class="testimonial-header">Our Awesome <span class="bold underline">Guests Review</span></h2>
+                <p #text1 class="testimonial-text text-center text-md-left">Testimonials</p>
+                <h2 #text2 class="testimonial-header">Our Awesome <span class="bold underline">Guests Review</span></h2>
             </div>
         </div>
         <!-- Slider main container -->
-        <div class="swiper-container" [(swiper)]="config">
+        <div #swiper class="swiper-container" [(swiper)]="config">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
