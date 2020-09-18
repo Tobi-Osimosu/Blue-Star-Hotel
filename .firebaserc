@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "blue-star-hotel": {
+      "hosting": {
+        "Blue-Star-Hotel": [
+          "blue-star-hotel"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "blue-star-hotel"
+  }
+}

@@ -1,7 +1,10 @@
+import { environment } from './../environments/environment';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { SwiperModule } from 'ngx-swiper-wrapper';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -47,6 +50,8 @@ import { OurFacilitiesLandingComponent } from './our-facilities/our-facilities-l
     BrowserAnimationsModule,
     AppRoutingModule,
     SwiperModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
   ],
   providers: [{ provide: 'windowObject', useValue: window }],
   bootstrap: [AppComponent],

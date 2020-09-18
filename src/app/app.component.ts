@@ -2,7 +2,6 @@ import { ThemeService } from './theme.service';
 import { routeAnimations } from './animations/routeAnimations.animation';
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -16,9 +15,6 @@ export class AppComponent implements OnInit {
   constructor(private themeService: ThemeService) {}
 
   ngOnInit() {
-    // AOS.init();
-
-
     this.themeService.initTheme();
     this.themeService.initThemeIconRotation();
 
