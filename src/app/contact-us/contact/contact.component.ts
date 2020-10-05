@@ -38,7 +38,7 @@ export class ContactComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.email.nativeElement,
-        toggleActions: 'restart none restart none',
+        toggleActions: 'restart none none none',
       },
     });
 
@@ -48,7 +48,7 @@ export class ContactComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.number.nativeElement,
-        toggleActions: 'restart none restart none',
+        toggleActions: 'restart none none none',
       },
     });
 
