@@ -31,6 +31,7 @@ export class FacilitiesComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.healthCare.nativeElement,
+        toggleActions: 'restart none restart none',
         start: 'top center',
       },
     });
@@ -41,6 +42,7 @@ export class FacilitiesComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.laundry.nativeElement,
+        toggleActions: 'restart none restart none',
         start: 'top center',
       },
     });
@@ -51,6 +53,7 @@ export class FacilitiesComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.internet.nativeElement,
+        toggleActions: 'restart none restart none',
         start: 'top center',
       },
     });
@@ -61,6 +64,7 @@ export class FacilitiesComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.spa.nativeElement,
+        toggleActions: 'restart none restart none',
         start: 'top center',
       },
     });
@@ -71,6 +75,7 @@ export class FacilitiesComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.restaurant.nativeElement,
+        toggleActions: 'restart none restart none',
         start: 'top center',
       },
     });
@@ -81,6 +86,7 @@ export class FacilitiesComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.pool.nativeElement,
+        toggleActions: 'restart none restart none',
         start: 'top center',
       },
     });

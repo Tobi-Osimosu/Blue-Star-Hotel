@@ -25,30 +25,33 @@ export class ContactComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     gsap.registerPlugin(ScrollTrigger);
     let tl = gsap.timeline({
-      defaults: {duration: 1},
+      defaults: { duration: 1 },
       scrollTrigger: {
-        trigger: this.address.nativeElement
-      }
-    })
+        trigger: this.address.nativeElement,
+        toggleActions: 'restart none restart none',
+      },
+    });
 
-    tl.from(this.address.nativeElement, {opacity: 0, x: -200})
+    tl.from(this.address.nativeElement, { opacity: 0, x: -200 });
 
     let tl2 = gsap.timeline({
-      defaults: {duration: 1},
+      defaults: { duration: 1 },
       scrollTrigger: {
-        trigger: this.email.nativeElement
-      }
-    })
+        trigger: this.email.nativeElement,
+        toggleActions: 'restart none restart none',
+      },
+    });
 
-    tl2.from(this.email.nativeElement, {opacity: 0, x: -200});
+    tl2.from(this.email.nativeElement, { opacity: 0, x: -200 });
 
     let tl3 = gsap.timeline({
-      defaults: {duration: 1},
+      defaults: { duration: 1 },
       scrollTrigger: {
-        trigger: this.number.nativeElement
-      }
-    })
+        trigger: this.number.nativeElement,
+        toggleActions: 'restart none restart none',
+      },
+    });
 
-    tl3.from(this.number.nativeElement, {opacity: 0, x: -200})
+    tl3.from(this.number.nativeElement, { opacity: 0, x: -200 });
   }
 }

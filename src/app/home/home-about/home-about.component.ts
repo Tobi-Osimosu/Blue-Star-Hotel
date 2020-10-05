@@ -30,6 +30,7 @@ export class HomeAboutComponent implements OnInit, AfterViewInit {
       defaults: {duration: 1},
       scrollTrigger: {
         trigger: this.about.nativeElement,
+        toggleActions: 'restart none restart none',
         start: 'center bottom',
       },
     });

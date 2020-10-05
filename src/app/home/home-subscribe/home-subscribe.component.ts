@@ -24,6 +24,7 @@ export class HomeSubscribeComponent implements OnInit, AfterViewInit {
       defaults: {duration: 1},
       scrollTrigger: {
         trigger: this.subscribe.nativeElement,
+        toggleActions: 'restart none restart none',
         start: "top center"
       }
     });

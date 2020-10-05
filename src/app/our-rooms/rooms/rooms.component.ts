@@ -64,7 +64,8 @@ export class RoomsComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.juniorRoom.nativeElement,
-        start: "top center"
+        toggleActions: 'restart none restart none',
+        start: 'top center',
       },
     });
 
@@ -79,7 +80,8 @@ export class RoomsComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.luxuryRoom.nativeElement,
-        start: "top center"
+        toggleActions: 'restart none restart none',
+        start: 'top center',
       },
     });
 
@@ -95,7 +97,8 @@ export class RoomsComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.executiveRoom.nativeElement,
-        start: "top center"
+        toggleActions: 'restart none restart none',
+        start: 'top center',
       },
     });
 
@@ -111,7 +114,8 @@ export class RoomsComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.superiorRoom.nativeElement,
-        start: "top center"
+        toggleActions: 'restart none restart none',
+        start: 'top center',
       },
     });
 
@@ -123,19 +127,21 @@ export class RoomsComponent implements OnInit, AfterViewInit {
       .from(this.srText4.nativeElement, { opacity: 0, y: -50 }, '-=0.7')
       .from(this.srBtns.nativeElement, { opacity: 0, y: -50 }, '-=0.8');
 
-      let tl5 = gsap.timeline({
-        defaults: { duration: 1 },
-        scrollTrigger: {
-          trigger: this.standardRoom.nativeElement,
-          start: "top center"
-        },
-      });
-  
-      tl5.from(this.strImg.nativeElement, { opacity: 0, x: -200 })
-        .from(this.strText1.nativeElement, { opacity: 0, y: -50 }, '-=0.4')
-        .from(this.strText2.nativeElement, { opacity: 0, y: -50 }, '-=0.5')
-        .from(this.strText3.nativeElement, { opacity: 0, y: -50 }, '-=0.6')
-        .from(this.strText4.nativeElement, { opacity: 0, y: -50 }, '-=0.7')
-        .from(this.strBtns.nativeElement, { opacity: 0, y: -50 }, '-=0.8');
+    let tl5 = gsap.timeline({
+      defaults: { duration: 1 },
+      scrollTrigger: {
+        trigger: this.standardRoom.nativeElement,
+        toggleActions: 'restart none restart none',
+        start: 'top center',
+      },
+    });
+
+    tl5
+      .from(this.strImg.nativeElement, { opacity: 0, x: -200 })
+      .from(this.strText1.nativeElement, { opacity: 0, y: -50 }, '-=0.4')
+      .from(this.strText2.nativeElement, { opacity: 0, y: -50 }, '-=0.5')
+      .from(this.strText3.nativeElement, { opacity: 0, y: -50 }, '-=0.6')
+      .from(this.strText4.nativeElement, { opacity: 0, y: -50 }, '-=0.7')
+      .from(this.strBtns.nativeElement, { opacity: 0, y: -50 }, '-=0.8');
   }
 }
