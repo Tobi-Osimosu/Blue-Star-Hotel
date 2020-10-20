@@ -64,7 +64,7 @@ export class RoomsComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.juniorRoom.nativeElement,
-        toggleActions: 'restart none none none',
+        toggleActions: 'restart none none reset',
         start: 'top center',
       },
     });
@@ -80,7 +80,7 @@ export class RoomsComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.luxuryRoom.nativeElement,
-        toggleActions: 'restart none none none',
+        toggleActions: 'restart none none reset',
         start: 'top center',
       },
     });
@@ -97,7 +97,7 @@ export class RoomsComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.executiveRoom.nativeElement,
-        toggleActions: 'restart none none none',
+        toggleActions: 'restart none none reset',
         start: 'top center',
       },
     });
@@ -114,7 +114,7 @@ export class RoomsComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.superiorRoom.nativeElement,
-        toggleActions: 'restart none none none',
+        toggleActions: 'restart none none reset',
         start: 'top center',
       },
     });
@@ -131,7 +131,7 @@ export class RoomsComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.standardRoom.nativeElement,
-        toggleActions: 'restart none none none',
+        toggleActions: 'restart none none reset',
         start: 'top center',
       },
     });
